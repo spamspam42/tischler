@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- ============================================ -->
+  <!--                 Navigation                   -->
+  <!-- ============================================ -->
+
+  <header id="cs-navigation">
+    <div class="cs-container">
+      <!--Nav Logo-->
+      <a href="" class="cs-logo" aria-label="back to home">
+        <img src="/img/Neuer Ordner/logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+      </a>
+      <!--Navigation List-->
+      <nav class="cs-nav" role="navigation">
+        <!--Mobile Nav Toggle-->
+        <button class="cs-toggle" aria-label="mobile menu toggle">
+          <div class="cs-box" aria-hidden="true">
+            <span class="cs-line cs-line1" aria-hidden="true"></span>
+            <span class="cs-line cs-line2" aria-hidden="true"></span>
+            <span class="cs-line cs-line3" aria-hidden="true"></span>
+          </div>
+        </button>
+        <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+        <div class="cs-ul-wrapper">
+          <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+            <li class="cs-li">
+              <a href="" class="cs-li-link cs-active">
+                Home
+              </a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-li-link">
+                Über Uns
+              </a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-li-link">
+                Service
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <a href="" class="cs-button-solid cs-nav-button">Unser Portfolio</a>
+      <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+      <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+          <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+          <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+      </button> -->
+    </div>
+  </header>
+
+
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
+
+  <section id="hero-541">
+    <div class="cs-container">
+      <div class="cs-content">
+        <h2 class="cs-title">Musterschreinerei bitte-ein-byte</h2>
+        <p class="cs-text">
+          Dies ist eine Beispielseite und dient nur zur Veranschaulichung!
+        </p>
+        <a href="" class="cs-button-solid">Kontakt</a>
+      </div>
+    </div>
+    <!--Background Color-->
+    <picture class="cs-background">
+      <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table-m.jpg">
+      <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table.jpg">
+      <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table.jpg" alt="logo" width="1920"
+        height="1000">
+    </picture>
+  </section>
+
+
+
+
+  <!-- ============================================ -->
+  <!--                   Gallery                    -->
+  <!-- ============================================ -->
+
+  <section id="gallery-46">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Unser Portfolio</span>
+        <h2 class="cs-title">Wir LEBEN Holz...</h2>
+        <p class="cs-text">
+          ... und diese Einstellung sieht man SELBSTVERSTÄNDLICH in unserer Abreit. Bei jedem Projekt kaufen Sie nicht
+          nur ein Möbelstück, sondern unsere Leidenschaft und Herzblut für unser Handwerk!
+        </p>
+      </div>
+      <div class="cs-image-group">
+        <!-- Image 1 -->
+        <div class="cs-item cs-item-1">
+          <picture class="cs-picture">
+            <source media="(max-width: 600px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction1-m.jpg">
+            <source media="(min-width: 601px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction1.jpg">
+            <img loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction1.jpg" alt="man grinding steel"
+              width="529" height="256">
+          </picture>
+          <!-- Hover Box -->
+          <div class="cs-hover-box">
+            <h3 class="cs-heading3">Project Name 1</h3>
+            <span class="cs-subtitle">Hier könnte eine Erklärung stehen</span>
+            <a class="cs-link" aria-label="read more about this project" href="">
+              <!-- SVG Arrow-->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                  fill="white" />
+              </svg>
+              Mehr erfahren
+            </a>
+          </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="cs-item cs-item-2">
+          <picture class="cs-picture">
+            <source media="(max-width: 600px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction2-m.jpg">
+            <source media="(min-width: 601px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction2.jpg">
+            <img loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction2.jpg" alt="wood worker" width="255"
+              height="255">
+          </picture>
+          <!-- Hover Box -->
+          <div class="cs-hover-box">
+            <h3 class="cs-heading3">Project Name 2</h3>
+            <span class="cs-subtitle">Hier könnte eine Erklärung stehen</span>
+            <a class="cs-link" aria-label="read more about this project" href="">
+              <!-- SVG Arrow-->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                  fill="white" />
+              </svg>
+              Mehr erfahren
+            </a>
+          </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="cs-item cs-item-3">
+          <picture class="cs-picture">
+            <source media="(max-width: 600px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction3-m.jpg">
+            <source media="(min-width: 601px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction3.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction3.jpg" alt="steel rebar grid"
+              width="255" height="255">
+          </picture>
+          <!-- Hover Box -->
+          <div class="cs-hover-box">
+            <h3 class="cs-heading3">Project Name 3</h3>
+            <span class="cs-subtitle">Hier könnte eine Erklärung stehen</span>
+            <a class="cs-link" aria-label="read more about this project" href="">
+              <!-- SVG Arrow-->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                  fill="white" />
+              </svg>
+              Mehr erfahren
+            </a>
+          </div>
+        </div>
+        <!-- Image 4 -->
+        <div class="cs-item cs-item-4">
+          <picture class="cs-picture">
+            <source media="(max-width: 600px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction4-m.jpg">
+            <source media="(min-width: 601px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction4.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction4.jpg" alt="modern home" width="255"
+              height="255">
+          </picture>
+          <!-- Hover Box -->
+          <div class="cs-hover-box">
+            <h3 class="cs-heading3">Project Name 4</h3>
+            <span class="cs-subtitle">Hier könnte eine Erklärung stehen</span>
+            <a class="cs-link" aria-label="read more about this project" href="">
+              <!-- SVG Arrow-->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                  fill="white" />
+              </svg>
+              Mehr erfahren
+            </a>
+          </div>
+        </div>
+        <!-- Image 5 -->
+        <div class="cs-item cs-item-5">
+          <picture class="cs-picture">
+            <source media="(max-width: 600px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction5-m.jpg">
+            <source media="(min-width: 601px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction5.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction5.jpg" alt="appliance" width="255"
+              height="255">
+          </picture>
+          <!-- Hover Box -->
+          <div class="cs-hover-box">
+            <h3 class="cs-heading3">Project Name 5</h3>
+            <span class="cs-subtitle">Hier könnte eine Erklärung stehen</span>
+            <a class="cs-link" aria-label="read more about this project" href="">
+              <!-- SVG Arrow-->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                  fill="white" />
+              </svg>
+              Mehr erfahren
+            </a>
+          </div>
+        </div>
+        <!-- Image 6 -->
+        <div class="cs-item cs-item-6">
+          <picture class="cs-picture">
+            <source media="(max-width: 600px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction6-m.jpg">
+            <source media="(min-width: 601px)"
+              srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction6.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction6.jpg" alt="modern home" width="255"
+              height="530">
+          </picture>
+          <!-- Hover Box -->
+          <div class="cs-hover-box">
+            <h3 class="cs-heading3">Project Name 6</h3>
+            <span class="cs-subtitle">Hier könnte eine Erklärung stehen</span>
+            <a class="cs-link" aria-label="read more about this project" href="">
+              <!-- SVG Arrow-->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z"
+                  fill="white" />
+              </svg>
+              Mehr erfahren
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="cs-button-solid">Alle Unsere Projekte</a>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                 Meet The Team                -->
+  <!-- ============================================ -->
+
+  <section id="meet-team-220">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Lernen Sie das Team kennen</span>
+        <h2 class="cs-title">Die Menschen hinter Musterschreinerei</h2>
+        <p class="cs-text">
+          Unser erfahrenes Team in der Schreinerei-Werkstatt vereint handwerkliches Geschick mit kreativem Know-how. Wir
+          sind Ihre zuverlässigen Experten für individuelle Möbel und maßgeschneiderte Holzarbeiten – Qualität, die man
+          sieht und spürt. Wir existieren nun in der dritten Generation!
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/member1.jpg" alt="portrait" width="275"
+              height="132">
+          </picture>
+          <span class="cs-name">Max Mustermann</span>
+          <span class="cs-job-title">Inhaber</span>
+          <!-- Social Flexbox -->
+          <div class="cs-social">
+            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+              <img aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/twitter.svg" alt="twitter" width="15"
+                height="13">
+            </a>
+            <a href="" class="cs-link" aria-label="Linked in" target="_blank" rel="noopener">
+              <img aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/linkedin.svg" alt="linkedin" width="17"
+                height="16">
+            </a>
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/member1.jpg" alt="portrait" width="275"
+              height="132">
+          </picture>
+          <span class="cs-name">Peter Müller</span>
+          <span class="cs-job-title">Restaurator</span>
+          <!-- Social Flexbox -->
+          <div class="cs-social">
+            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+              <img aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/twitter.svg" alt="twitter" width="15"
+                height="13">
+            </a>
+            <a href="" class="cs-link" aria-label="Linked in" target="_blank" rel="noopener">
+              <img aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/linkedin.svg" alt="linkedin" width="17"
+                height="16">
+            </a>
+          </div>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <img aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/member1.jpg" alt="portrait" width="275"
+              height="132">
+          </picture>
+          <span class="cs-name">Alexander Meyer</span>
+          <span class="cs-job-title">Azubi</span>
+          <!-- Social Flexbox -->
+          <div class="cs-social">
+            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+              <img aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/twitter.svg" alt="twitter" width="15"
+                height="13">
+            </a>
+            <a href="" class="cs-link" aria-label="Linked in" target="_blank" rel="noopener">
+              <img aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/linkedin.svg" alt="linkedin" width="17"
+                height="16">
+            </a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                 Why Choose                   -->
+  <!-- ============================================ -->
+
+  <section id="why-choose-289">
+    <div class="cs-container">
+      <div class="cs-content">
+        <div class="cs-flex">
+          <span class="cs-topper">Unser Vorgehen</span>
+          <h2 class="cs-title">Warum wir Ihr Projekt am besten umsetzen</h2>
+        </div>
+        <p class="cs-text">
+          Als Schreinerwerkstatt vereinen wir handwerkliche Experten, kreative Designer und Problemlöser.
+          Wir setzen auf Neugier und Präzision, um sicherzustellen, dass Ihre Möbelstücke nicht nur geschaffen, sondern
+          auch gehört werden.
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/award.svg" alt="icon" width="48" height="48">
+          <h3 class="cs-h3">Handwerkskunst und Präzision</h3>
+          <p class="cs-item-text">
+            Ein erstklassiger Schreiner zeichnet sich durch herausragende Handwerkskunst und Präzision aus. Kunden
+            sollten erfahren, dass Ihre Möbel mit höchster Sorgfalt und Fachkenntnis gefertigt werden.
+          </p>
+        </li>
+        <li class="cs-item">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild-black.svg" alt="icon" width="40"
+            height="48">
+          <h3 class="cs-h3">Hochwertige Materialien und Langlebigkeit</h3>
+          <p class="cs-item-text">
+            Kunden schätzen es, wenn ein Schreiner hochwertige Materialien verwendet und auf Langlebigkeit setzt.
+            Informationen über die Auswahl von Holzarten, die sorgfältige Verarbeitung und die Haltbarkeit der
+            Möbelstücke sind entscheidende Punkte, die potenzielle Kunden gerne hören möchten.
+          </p>
+        </li>
+        <li class="cs-item">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/call.svg" alt="icon" width="48" height="48">
+          <h3 class="cs-h3">Individuelle Lösungen und Kreativität</h3>
+          <p class="cs-item-text">
+            Ein exzellenter Schreiner bietet maßgeschneiderte Lösungen und zeigt Kreativität bei der Umsetzung
+            individueller Kundenwünsche. Von der Planung bis zur Fertigstellung wird darauf geachtet, dass jedes
+            Möbelstück ein einzigartiges Meisterwerk ist..
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                   Reviews                    -->
+  <!-- ============================================ -->
+
+  <section id="reviews-1452">
+    <div class="cs-container">
+      <div class="cs-content">
+        <!--Yellow Quote-->
+        <img class="cs-quote" aria-hidden="true"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/quote-yellow.svg" decoding="async"
+          alt="quote icon" width="40" height="33" loading="lazy">
+        <span class="cs-topper">Bewertungen</span>
+        <h2 class="cs-title">Vertraut von Tausenden von Menschen und Unternehmen</h2>
+        <p class="cs-text">
+          Vertrauen Sie auf uns – Tausende zufriedener Kunden und Unternehmen setzen bereits auf unsere Kompetenz.
+          Qualität und Verlässlichkeit, auf die Sie bauen können.
+        </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <p class="cs-review">
+            Hervorragende Arbeit und absolute Professionalität! Die Schreinerei hat unsere individuellen Vorstellungen
+            perfekt umgesetzt. Von der kreativen Planung bis zur präzisen Umsetzung – ein echtes Meisterstück. Wir
+            empfehlen die Schreinerei mit vollem Vertrauen weiter!
+          </p>
+          <div class="cs-flex-group">
+            <picture class="cs-picture">
+              <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/Image.png"
+                decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+            </picture>
+            <span class="cs-name">
+              Sebastion Peter
+              <span class="cs-job">Einkäufer Ikea</span>
+            </span>
+          </div>
+        </li>
+        <li class="cs-item">
+          <p class="cs-review">
+            Die Schreinerei hat unsere Erwartungen übertroffen. Die Möbel sind nicht nur ästhetisch ansprechend, sondern
+            auch von hoher Qualität. Das Team arbeitete effizient, war zuverlässig und zeigte ein tiefes Verständnis für
+            Design und Funktionalität. Wir sind rundum zufrieden und würden die Schreinerei jedem weiterempfehlen.
+          </p>
+          <div class="cs-flex-group">
+            <picture class="cs-picture">
+              <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/Image.png"
+                decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+            </picture>
+            <span class="cs-name">
+              Mariva Eva
+              <span class="cs-job">Privatkauf</span>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!--                 Contact Form                 -->
+  <!-- ============================================ -->
+
+  <section id="cs-contact-549">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Kontakt</span>
+        <h2 class="cs-title">Schreiben Sie uns eine Nachricht</h2>
+        <p class="cs-text">
+          Haben Sie Fragen oder möchten Sie ein individuelles Holzprojekt besprechen? Kontaktieren Sie uns! Unser
+          freundliches Team steht Ihnen gerne zur Verfügung, um Ihre Wünsche in die Realität umzusetzen
+        </p>
+      </div>
+      <!--Swap the image out for a screenshot of the Google Map location for your client, or you can add the embedded iframe from google and add the cs-background class to it and it should work, remove the animated dots in the CSS if you do that-->
+      <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+          srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
+        <img loading="lazy" decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png" alt="appliance" width="1280"
+          height="568" aria-hidden="true">
+      </picture>
+      <!--Form-->
+      <form class="cs-form" id="cs-form-549" name="Contact Form" method="post">
+        <label class="cs-label">
+          Name
+          <input class="cs-input" required type="text" id="name-549" name="name" placeholder="Name">
+          <img class="cs-icon" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/person-gold.svg" alt="person icon"
+            width="32" height="32">
+        </label>
+        <label class="cs-label cs-email">
+          Email
+          <input class="cs-input" required type="text" id="email-549" name="email" placeholder="Email">
+          <img class="cs-icon" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/mail-gold.svg" alt="mail icon" width="32"
+            height="32">
+        </label>
+        <label class="cs-label cs-phone">
+          Telefon-Nr.
+          <input class="cs-input" required type="text" id="phone-549" name="phone" placeholder="Phone">
+          <img class="cs-icon" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/phone-golden.svg" alt="phone icon"
+            width="32" height="32">
+        </label>
+        <label class="cs-label cs-phone">
+          Wie haben Sie uns gefunden?
+          <input class="cs-input" required type="text" id="phone-549" name="phone" placeholder="Google">
+          <img class="cs-icon" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/refer.svg" alt="talking icon" width="32"
+            height="32">
+        </label>
+        <label class="cs-label cs-textarea-label">
+          Nachricht
+          <textarea class="cs-textarea" required name="Message" id="message-549"
+            placeholder="Hallo, ich interessiere mich ..."></textarea>
+        </label>
+        <button class="cs-submit" type="submit">Senden</button>
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ============================================ -->
+  <!--                   Footer                     -->
+  <!-- ============================================ -->
+
+  <footer id="cs-footer-269">
+    <div class="cs-container">
+      <!-- Logo Group -->
+      <div class="cs-logo-group">
+        <a aria-label="go back to home" class="cs-logo" href="">
+          <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async"
+            src="/img/Neuer Ordner/logo.png" alt="logo" width="240" height="32">
+        </a>
+
+      </div>
+      <!-- Links -->
+      <ul class="cs-nav">
+        <li class="cs-nav-li">
+          <span class="cs-header">Nebenseiten</span>
+        </li>
+        <li class="cs-nav-li">
+          <a class="cs-nav-link" href="">Home</a>
+        </li>
+        <li class="cs-nav-li">
+          <a class="cs-nav-link" href="">Über Uns</a>
+        </li>
+        <li class="cs-nav-li">
+          <a class="cs-nav-link" href="">Service</a>
+        </li>
+        <li class="cs-nav-li">
+          <a class="cs-nav-link" href="">Portfolio</a>
+        </li>
+
+      </ul>
+      <!-- Contact Info -->
+      <ul class="cs-contact">
+        <li class="cs-nav-li">
+          <span class="cs-header">Contact</span>
+        </li>
+        <li class="cs-contact-li">
+          <a class="cs-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+        </li>
+        <li class="cs-contact-li">
+          <a class="cs-contact-link" href="mailto:info@email.com">info@email.com</a>
+        </li>
+        <!-- Social Media -->
+        <li class="cs-contact-li cs-social-group">
+          <div class="cs-social">
+            <a class="cs-social-link" aria-label="visit google profile" href="">
+              <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+            </a>
+            <a class="cs-social-link" aria-label="visit facebook profile" href="">
+              <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6"
+                height="11">
+            </a>
+            <a class="cs-social-link" aria-label="visit instagram profile" href="">
+              <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11"
+                height="11">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <script src="script-nav.js"></script>
+
+</body>
+
+</html>
